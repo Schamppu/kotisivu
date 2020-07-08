@@ -59,6 +59,6 @@ import {Component, Vue} from "vue-property-decorator";
  * AppLayout luo verkkosivun perusrakenteen (header, navigation, yms.)
  */
 export default class AppLayout extends Vue {
-  // Tyhjä toistaiseksi. Lisätään myöhemmin lisää
+  // Tyhjä toistaiseksi. Lisätään myöhemmin lisää.
 }
 </script>
