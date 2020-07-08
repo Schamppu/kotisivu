@@ -1,0 +1,34 @@
+# Node.js
+.DS_Store
+.thumbs.db
+kotisivu/node_modules
+package.json
+npm-debug.log*
+.npm
+/.npmrc
+
+# Quasarin tiedostot
+.quasar
+/dist
+
+# Generoidut dokumentit
+/src-cordova/node_modules
+/src-cordova/platforms
+/src-cordova/plugins
+/src-cordova/www
+/src-capacitor/www
+/src-capacitor/node_modules
+/src-bex/www
+/src-bex/js/core
+
+# Muut lokitiedostot yms.
+yarn-debug.log*
+yarn-error.log*
+
+# IDEA:n tiedostot
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.iml
