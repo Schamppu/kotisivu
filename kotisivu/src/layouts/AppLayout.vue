@@ -1,6 +1,8 @@
 <template>
   <q-layout view="lHh Lpr lFf">
+    <!-- Headerin luonti -->
     <q-header elevated>
+      <!-- Toolbarin lisääminen headerin sisälle -->
       <q-toolbar>
         <q-btn
           flat
@@ -11,34 +13,16 @@
           @click="leftDrawerOpen = !leftDrawerOpen"
         />
 
-        <q-toolbar-title>
+        <q-toolbar-title class="absolute-center">
           Sami Pentin Online CV
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
-      </q-toolbar>
-    </q-header>
+        <q-space />
+        <language-selector />
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      content-class="bg-grey-1"
-    >
-      <q-list>
-        <q-item-label
-          header
-          class="text-grey-8"
-        >
-          Essential Links
-        </q-item-label>
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
-      </q-list>
-    </q-drawer>
+      </q-toolbar>
+
+    </q-header>
 
     <q-page-container>
       <router-view />
@@ -47,12 +31,12 @@
 </template>
 
 <script lang="ts">
-import EssentialLink from 'components/EssentialLink.vue'
-import {Component, Vue} from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator"
+import LanguageSelector from "components/LanguageSelector.vue"
 
 @Component({
   components: {
-    EssentialLink
+    LanguageSelector
   }
 })
 /**

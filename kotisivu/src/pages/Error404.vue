@@ -1,13 +1,19 @@
 <template>
   <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        404
-      </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
-      </div>
+      <transition-group
+        appear
+        enter-active-class="animated slideInDown "
+      >
+        <div style="font-size: 30vh" key="sad-face">
+          :(
+        </div>
+
+        <div class="text-h2" style="opacity:.8" key="text-itself">
+          Voi ei. Täällä ei ole mitään.
+        </div>
+      </transition-group>
 
       <q-btn
         class="q-mt-xl"
@@ -15,7 +21,7 @@
         text-color="blue"
         unelevated
         to="/"
-        label="Go Home"
+        label="Palaa aloitussivulle..."
         no-caps
       />
     </div>
@@ -24,8 +30,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { Component } from "vue-property-decorator"
 
-export default Vue.extend({
-  name: 'Error404'
-})
+@Component
+export default class NotFound extends Vue {
+  // Tyhjä.
+}
 </script>

@@ -83,6 +83,16 @@ module.exports = {
     'import/no-extraneous-dependencies': 'off',
     'prefer-promise-reject-errors': 'off',
 
+    // Omat kustomoidut optionssit, ettei buildaus aina kosahda
+
+    'keyword-spacing': 'warn',
+    'space-before-function-paren': 'warn',
+    '@typescript-eslint/no-unsafe-member-access': 'warn',
+
+    /*
+    '': 'warn',
+    */
+
     // TypeScript
     quotes: ['warn', 'single', { avoidEscape: true }],
     '@typescript-eslint/explicit-function-return-type': 'off',

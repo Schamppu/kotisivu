@@ -25,7 +25,7 @@ module.exports = configure(function (ctx) {
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
     boot: [
-
+      'firebase',
       'i18n'
     ],
 
@@ -71,6 +71,7 @@ module.exports = configure(function (ctx) {
       // https://quasar.dev/quasar-cli/handling-webpack
       extendWebpack (cfg) {
         // linting is slow in TS projects, we execute it only for production builds
+
         if (ctx.prod) {
           cfg.module.rules.push({
             enforce: 'pre',
@@ -106,7 +107,7 @@ module.exports = configure(function (ctx) {
 
     // animations: 'all', // --- includes all animations
     // https://quasar.dev/options/animations
-    animations: [],
+    animations: 'all',
 
     // https://quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
