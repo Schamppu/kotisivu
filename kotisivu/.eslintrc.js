@@ -88,6 +88,13 @@ module.exports = {
     'keyword-spacing': 'warn',
     'space-before-function-paren': 'warn',
     '@typescript-eslint/no-unsafe-member-access': 'warn',
+    'indent': 'warn',
+    'semi': 'warn',
+    'no-multiple-empty-lines': 'warn',
+    'no-unused-vars': 'warn',
+    'vue/require-v-for-key': 'warn',
+    'vue/no-parsing-error': 'warm',
+
 
     /*
     '': 'warn',
