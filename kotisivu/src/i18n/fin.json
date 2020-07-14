@@ -1,0 +1,32 @@
+{
+  "index": {
+    "welcome": "Tervetuloa!",
+    "text": "Olkaa hyvä, ja skrollatkaa itsenne tutuksi kanssani. Virtuaalisen portfolioni tarkoitus on esitellä, kuka olen ja mitä teen."
+  },
+  "synopsis": {
+    "boxtitle": {
+      "1": "Luonteeni",
+      "2": "Osaamiseni",
+      "3": "Menneisyyteni"
+    },
+    "boxtext": {
+      "1": "\nOlen sosiaalinen introvertti. \n\nTai hybridi. \nMinut voi siis löytää kotoa näpertämästä jonkin projektini ääressä, tai vaihtoehtoisesti vietän kokonaisen viikonlopun pelaamalla jotain uutta peliä. \n\nMutta aivan yhtä todennäköistä minut on löytää baarista, tutustumasta uusiin ihmisiin, viettämässä aikaa läheisteni kanssa, tai mistä milloinkin.",
+      "2": "\nDigitaalisena moniosaajana minulta onnistuu useampikin asia.\n\nEhdottomasti parhaimmillani olen luovuutta vaativien projektien parissa. Minulta löytyy silmää designille niin web-sovelluksissa kuin myös perinteisemmissä ohjelmissa tai peleissä. Olen myös taitava ohjelmoimaan ja tuttuja kieliä on iso kasa. Kokemusta löytyy myös tiimityöskentelystä ja organisoinnista. Tutustu töihini nähdäksesi paremmin, mitä olen tehnyt.",
+      "3": "\nOhjelmointiharrastukseni alkoi kun olin 10-vuotias.\n\nKiinnostuin lapsena peliohjelmoinnista, ja aloitinkin jo hyvin nuorella iällä ohjelmoimaan pelejä. Ohjelmointi- ja grafiikkaosaamisestani iso osa tuleekin siitä, että harrastin peliohjelmointia useita vuosia.\n\nLukion ja armeijan käytyäni olen aloittanut opiskelemaan Helsingin Yliopistossa tietojenkäsittelytiedettä, mikä tuntuu luonnolliselta jatkumolta jo lapsena alkaneelle mielenkiinnonkohteelle."
+    }
+  },
+  "profile": {
+    "title": {
+      "1": "Luovuuteni toimii suurena voimavarana.",
+      "2": "Ihmisläheisyys ja elämäni sosiaalisena otuksena.",
+      "3": "Intohimoni teknologiaan ja tietotekniikkaan suunnannäyttäjänä.",
+      "4": "Opiskelu osana teoreettisen osaamiseni kartuttamista."
+    },
+    "text": {
+      "1": "    Olen hyvin nuoresta iästä asti ollut kiinnostunut taiteilusta. Piirtäminen on aina ollut yksi vahvuuksistani, ja nautin myös kirjoittamisesta sekä suunnittelutyöstä. Oikeastaan kaikki työ, mihin liittyy luova työskentely, on minulle varsin mieluista - oli kyse brainstormaamisesta tai vaikkapa ruoanlaitosta.\n\n   Peruskoulutuksessa ja lukiossa olin kuvataidepainotuksella, missä pääsin toteuttamaan luovaa puoltani. Minulla on myös ajan saatossa ollut lukuisia eri projekteja, missä luova työ on ollut keskeistä. Tarkista työni nähdäksesi laajemmin, mitä olen saanut aikaiseksi ajan saatossa.",
+      "2": "    Tiimityöskentely ja työkaverit ovat töissä minulle tärkeitä. Tulen myös toimeen yksin, ja tarvitsen omaakin aikaa - siksi usein kuvailen itseäni sosiaalisena introverttinä. Otan hyvin roolia tiimissä, osallistun keskusteluun ja kestän kritiikkiä.\n\n    Työelämässä osallistun ja olen järjestänyt aktiivisesti yhteisiä aktiviteetteja työporukalle, koska uskon todella, että töiden tekeminen on mukavaa kun tulee hyvin muiden kanssa juttuun. Lauta- ja korttipeli-illat, ravintolakäynnit tai vaikka puistogrillailut ovat työporukan tehokkuudessa ja jaksamisessa mielestäni olennaisia.",
+      "3": "    Varhaisimpia merkkejä kiinnostuksestani teknologiaan lienee, kun lapsena tykkäsin hakea kierrätyskeskuksesta rikkinäisiä laitteita ja purkaa niitä osiin. Minua kiehtoi suuresti, miten pienet komponentit toimivat, vaikka niiden toiminnasta en silloin mitään ymmärtänytkään.\n\n    Mutta nykyään ymmärrän enemmän. Uteliaisuuteni teknologiaan ja tietotekniikkaan ei ole koskaan kadonnut, vaan se sama uteliaisuus on säilynyt lapsesta aikuisiälle asti. Ja kiinnostukseni tietotekniikkaan onkin mielestäni yksi olennaisimpia suunnannäyttäjiä elämässäni, ja ajanut minua eteenpäin urapolullani.",
+      "4": "    Vaikka aktiivisen harrastustoiminnan myötä ohjelmointikokemusta ja -osaamista on kertynyt paljon, myös teoreettisemman ja syvemmän osaamisen kehittäminen on tärkeää.\n\n    Oltuani alalla jo satunnaisesti töissä päätinkin lopulta hakea Helsingin Yliopistoon opiskelemaan tietojenkäsittelytiedettä pääaineena. Valinta ei olisi voinut olla osuvampi, ja olen nauttinut opiskelusta erittäin paljon ja nauttinut myös hyvästä opintomenestyksestä."
+    }
+  }
+}

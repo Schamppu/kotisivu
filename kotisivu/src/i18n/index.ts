@@ -1,7 +1,7 @@
-import enUS from './en-us'
-import fin from './fin'
+import en from './en.json'
+import fin from './fin.json'
 
 export default {
-  'en-us': enUS,
+  'en': en,
   fin: fin
 }

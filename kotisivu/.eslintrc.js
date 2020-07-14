@@ -94,6 +94,12 @@ module.exports = {
     'no-unused-vars': 'warn',
     'vue/require-v-for-key': 'warn',
     'vue/no-parsing-error': 'warm',
+    'quote-props': 'warn',
+    'no-dupe-keys': 'warn',
+    'object-curly-spacing': 'warn',
+    'padded-blocks': 'warn',
+    'comma-spacing': 'warn',
+    'space-infix-ops': 'warn',
 
 
     /*

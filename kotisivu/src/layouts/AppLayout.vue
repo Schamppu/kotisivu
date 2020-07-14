@@ -24,10 +24,10 @@
         />
         <q-toolbar-title class="absolute-center t-contrast2">
           <
-            <q-img
-              src="~assets/headercenter.svg"
-              class="koti-header-image"
-            />
+          <q-img
+            src="~assets/headercenter.svg"
+            class="koti-header-image"
+          />
           />
         </q-toolbar-title>
         <q-space />
@@ -55,44 +55,46 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <div class="q-pa-lg">
+      <!-- Bottom margin ettei jää valkoista -->
+    </div>
+
   </q-layout>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator"
-import LanguageSelector from "components/LanguageSelector.vue"
-import LeftDrawer from "components/LeftDrawer.vue";
-
-@Component({
-  components: {
-    LanguageSelector,
-    LeftDrawer
+  import { Component, Vue } from "vue-property-decorator"
+  import LanguageSelector from "components/LanguageSelector.vue"
+  import LeftDrawer from "components/LeftDrawer.vue";
+  @Component({
+    components: {
+      LanguageSelector,
+      LeftDrawer
+    }
+  })
+  /**
+   * AppLayout luo verkkosivun perusrakenteen (header, navigation, yms.)
+   */
+  export default class AppLayout extends Vue {
+    // Palvellaan datasta drawerin asiat
+    leftDrawerOpen = false
+    miniState = true
   }
-})
-/**
- * AppLayout luo verkkosivun perusrakenteen (header, navigation, yms.)
- */
-export default class AppLayout extends Vue {
-  // Palvellaan datasta drawerin asiat
-  leftDrawerOpen = false
-  miniState = true
-}
 </script>
 
 <style lang="scss">
   // Hae filtteriväri osoitteesta: https://codepen.io/sosuke/pen/Pjoqqp
   .koti-logo {
     filter: invert(37%) sepia(54%) saturate(3571%) hue-rotate(309deg) brightness(91%) contrast(86%);
-    width: 12%;
-    height: 12%;
+    width: 8em;
+    height: 100%;
   }
-
   .koti-header-image {
     filter: invert(68%) sepia(96%) saturate(1664%) hue-rotate(324deg) brightness(87%) contrast(94%);
     width: 25px;
     height: 25px;
   }
-
   .koti-drawer {
     background-color: $c-main;
     color: $c-contrast1;

@@ -1,21 +1,77 @@
 // Globaalit SASS muuttujat
 
 // Applikaation tausta yms.
+
 .koti-app
   background-color: $tausta
 
 .koti-header
   background-color: $header
 
+.koti-tausta-1
+  background-color: $c-light
+
+.koti-tausta-2
+  background-color: $c-contrast1
+
+.koti-tausta-3
+  background-color: $c-contrast2
+
+.koti-tausta-black-opacity
+  background-color: rgba(255,255,255,0.0)
+
+.koti-box-color1
+  background-color: rgba(0,0,0,0.1)
+  border-color: $c-lighter
+  border-width: 3px
+
+.koti-box-color2
+  background-color: rgba(0,0,0,0.1)
+  border-color: $c-contrast1
+  border-width: 3px
+
+.koti-box-color3
+  background-color: rgba(0,0,0,0.1)
+  border-color: $c-contrast2
+  border-width: 3px
+
 // Normaaliväreinen teksti
 .t-primary
   color: $c-teksti
 
+// Kontrastivärjätyt tekstit
 .t-contrast1
   color: $c-contrast1
 
 .t-contrast2
   color: $c-contrast2
+
+// Taustan värinen teksti
+.t-tausta
+  color: $tausta
+
+// Emphasize tekstityylit
+.e1
+  color: $c-contrast1-light
+  letter-spacing: 2px
+  font-weight: bold
+
+.e2
+  color: $c-contrast2-light
+  letter-spacing: 2px
+  font-weight: bold
+
+.et1
+  color: $c-contrast2-light
+  letter-spacing: 4px
+  font-weight: bold
+
+
+// Custom fontit
+@font-face
+  font-family: acme
+  src: url(../assets/fonts/acme.woff)
+
 
 
 

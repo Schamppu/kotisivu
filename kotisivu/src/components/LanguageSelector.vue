@@ -15,7 +15,7 @@ export default{
       this.$i18n.locale = 'fin'
     },
     selectEn() {
-      this.$i18n.locale = 'en-us'
+      this.$i18n.locale = 'en'
     }
   }
 }
