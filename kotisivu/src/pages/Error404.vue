@@ -1,5 +1,5 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen notfound text-white text-center q-pa-md flex flex-center">
     <div>
 
       <transition-group
@@ -31,9 +31,29 @@
 <script lang="ts">
 import Vue from 'vue'
 import { Component } from "vue-property-decorator"
+import Profile from "pages/Profile.vue";
+import TitleSeparator from "pages/TitleSeparator.vue";
+import Synopsis from "pages/Synopsis.vue";
 
-@Component
+@Component({
+  meta: {
+    title: "Spentti.fi - 404",
+    meta: {
+      description: { name: 'description', content: 'Not found.' },
+      keywords: { name: 'keywords', content: 'Sami Pentti' },
+      equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+    }
+  }
+})
 export default class NotFound extends Vue {
   // Tyhjä.
 }
 </script>
+
+<style lang="scss">
+
+  .notfound {
+    background-color: $tausta;
+  }
+
+</style>

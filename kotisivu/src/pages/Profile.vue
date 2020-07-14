@@ -1,6 +1,9 @@
 <template>
   <div class="q-px-xl">
-
+    <div class="t-contrast1 row q-mb-xs" style="font-style: italic; font-size: 16px">
+      <q-space />
+      Pssst... laita kursori alla olevan laatikon päälle pysäyttääksesi sen<q-icon name="fas fa-smile-wink" class="q-pl-md " size="22px" />
+    </div>
     <q-card class="koti-box-color2" bordered style="border-width: 2px;">
       <q-card-section horizontal>
         <q-carousel

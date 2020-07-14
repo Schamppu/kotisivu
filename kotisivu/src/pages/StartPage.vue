@@ -64,10 +64,17 @@ import Profile from "./Profile.vue"
     Profile,
     TitleSeparator,
     Synopsis
+  },
+  meta: {
+    title: "Spentti.fi - Me",
+    meta: {
+      description: { name: 'description', content: 'My virtual portfolio. Thing about me in a compact package.' },
+      keywords: { name: 'keywords', content: 'Sami Pentti' },
+      equiv: { 'http-equiv': 'Content-Type', content: 'text/html; charset=UTF-8' }
+    }
   }
 })
 export default class StartPage extends Vue {
-  // Tyhjä toistaiseksi.
 }
 </script>
 

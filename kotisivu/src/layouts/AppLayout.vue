@@ -31,6 +31,7 @@
           />
         </q-toolbar-title>
         <q-space />
+        <q-btn outline class="koti-login-button q-mr-md" label="Kirjaudu" />
         <language-selector />
       </q-toolbar>
     </q-header>
@@ -98,6 +99,9 @@
   .koti-drawer {
     background-color: $c-main;
     color: $c-contrast1;
+  }
+  .koti-login-button {
+    color: $c-contrast1
   }
 
 </style>
