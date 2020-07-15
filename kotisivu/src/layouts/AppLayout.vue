@@ -31,7 +31,8 @@
           />
         </q-toolbar-title>
         <q-space />
-        <q-btn outline class="koti-login-button q-mr-md" label="Kirjaudu" />
+        <q-btn outline class="koti-login-button q-mr-md" label="Kirjaudu sisään" @click="goToLogin()" v-if="!getLogin()" />
+        <q-btn outline class="koti-login-button q-mr-md" label="Kirjaudu ulos" @click="logOut()" v-if="getLogin()" />
         <language-selector />
       </q-toolbar>
     </q-header>
@@ -68,6 +69,7 @@
   import { Component, Vue } from "vue-property-decorator"
   import LanguageSelector from "components/LanguageSelector.vue"
   import LeftDrawer from "components/LeftDrawer.vue";
+  import {Cookies} from "quasar";
   @Component({
     components: {
       LanguageSelector,
@@ -81,6 +83,32 @@
     // Palvellaan datasta drawerin asiat
     leftDrawerOpen = false
     miniState = true
+    loggedIn: boolean = this.getLogin()
+
+    goToLogin() {
+      this.$router.push('/login')
+    }
+
+    mounted() {
+      this.$store.dispatch('auth/handleAuthStateChange')
+    }
+
+    getLogin() {
+      if (Cookies.has('SpenttiLogin')) {
+        return true
+      } else {
+        // Ei login keksiä...
+      }
+      return this.$store.state.auth.loggedIn
+    }
+
+    logOut() {
+      if (Cookies.has('SpenttiLogin')) {
+        Cookies.remove('SpenttiLogin')
+      }
+      this.$store.dispatch('auth/logoutUser')
+    }
+
   }
 </script>
 
