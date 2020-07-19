@@ -36,7 +36,7 @@
             />
             <div>
               <q-btn label="Kirjaudu sisään" type="submit" flat color="c-contrast2"/>
-              <q-btn label="Tyhjennä" type="reset" flat color="c-contrast2" flat class="q-ml-sm" />
+              <q-btn label="Tyhjennä" type="reset" flat color="c-contrast2" class="q-ml-sm" />
             </div>
           </q-form>
         </q-card-section>
@@ -81,8 +81,6 @@ export default class StartPage extends Vue {
       email: email,
       password: password
     })
-    Cookies.set('SpenttiLogin', true, { expires: 1, sameSite: 'strict' })
-    this.$router.push("/")
   }
 
   onReset(data: any) {

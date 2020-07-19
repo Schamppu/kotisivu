@@ -31,6 +31,9 @@
           />
         </q-toolbar-title>
         <q-space />
+
+        <q-btn icon="fas fa-plus" flat class="koti-login-button q-mr-lg" label="Kirjoita uusi teksti..." @click="goToWriting()" v-if="getLogin()" />
+
         <q-btn outline class="koti-login-button q-mr-md" label="Kirjaudu sisään" @click="goToLogin()" v-if="!getLogin()" />
         <q-btn outline class="koti-login-button q-mr-md" label="Kirjaudu ulos" @click="logOut()" v-if="getLogin()" />
         <language-selector />
@@ -87,6 +90,10 @@
 
     goToLogin() {
       this.$router.push('/login')
+    }
+
+    goToWriting() {
+      this.$router.push('/thoughts')
     }
 
     mounted() {

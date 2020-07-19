@@ -28,7 +28,7 @@
     }
 
     moveRoute(obj: MenuObject) {
-      this.$router.push("/"+obj.route)
+      this.$router.push("/" + obj.route).then().catch()
     }
 
   }

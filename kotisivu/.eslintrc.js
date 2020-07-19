@@ -100,6 +100,7 @@ module.exports = {
     'padded-blocks': 'warn',
     'comma-spacing': 'warn',
     'space-infix-ops': 'warn',
+    'spaced-comment': 'warn',
 
 
     /*
