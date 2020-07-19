@@ -31,9 +31,9 @@
 <script lang="ts">
 import Vue from 'vue'
 import { Component } from "vue-property-decorator"
-import Profile from "pages/Profile.vue";
-import TitleSeparator from "pages/TitleSeparator.vue";
-import Synopsis from "pages/Synopsis.vue";
+import Profile from "pages/../sections/Profile.vue";
+import TitleSeparator from "components/TitleSeparator.vue";
+import Synopsis from "src/sections/Synopsis.vue";
 
 @Component({
   meta: {

@@ -12,13 +12,13 @@
         enter-active-class="animated fadeInDownBig slow"
       >
         <div>
-          <h1 class="q-ma-sm" style="margin-left: 20px">
+          <div class="q-ma-sm koti-teksti-title">
             {{ $t('index.welcome') }}
             <q-img
               src="~assets/helloicon.svg"
               class="koti-teksti-ikoni"
             />
-          </h1>
+          </div>
         </div>
       </transition>
 
@@ -27,7 +27,7 @@
         enter-active-class="animated fadeInDownBig slow"
       >
         <div>
-          <h5 class="q-ma-sm" style="margin-left: 40px"> {{ $t('index.text')  }}</h5>
+          <div class="q-ma-sm koti-teksti-body"> {{ $t('index.text')  }}</div>
         </div>
       </transition>
     </div>
@@ -51,10 +51,10 @@
 import Vue from 'vue'
 
 import { Component } from "vue-property-decorator"
-import Synopsis from "./Synopsis.vue"
-import TitleSeparator from "./TitleSeparator.vue"
+import Synopsis from "../sections/Synopsis.vue"
+import TitleSeparator from "components/TitleSeparator.vue"
 import AboutMe from "./AboutMe.vue"
-import Profile from "./Profile.vue"
+import Profile from "../sections/Profile.vue"
 
 /**
  * Sisältää aloitussivulla olevan datan.
@@ -87,24 +87,71 @@ export default class StartPage extends Vue {
   }
 
   // Hae filtteriväri osoitteesta: https://codepen.io/sosuke/pen/Pjoqqp
+
   .koti-teksti {
     color: white;
     background-color: rgba(0,0,0,0.5);
     position: absolute;
     z-index: 1000;
-    margin-top: 20vh;
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    // Iso
+    @media (min-width: $breakpoint-md) {
+      margin-top: 20vh;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+    // Pieni
+    @media (max-width: $breakpoint-md) {
+      margin-top: 20vh;
+      width: 100%;
+      max-width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  .koti-teksti-title {
+    // Iso
+    @media (min-width: $breakpoint-md) {
+      font-size: 70px;
+      margin-left: 20px
+    }
+    // Pieni
+    @media (max-width: $breakpoint-md) {
+      font-size: 20px
+    }
+  }
+
+  .koti-teksti-body {
+    // Iso
+    @media (min-width: $breakpoint-md) {
+      font-size: 20px;
+      margin-left: 40px
+    }
+    // Pieni
+    @media (max-width: $breakpoint-md) {
+      font-size: 14px
+    }
   }
 
   .koti-teksti-ikoni {
-    filter: invert(37%) sepia(54%) saturate(3571%) hue-rotate(309deg) brightness(91%) contrast(86%);
-    width: 100px;
-    height: 100px;
-    margin-bottom: 30px;
-    margin-left: 20px;
-    position: absolute;
+    // Iso
+    @media (min-width: $breakpoint-md) {
+      filter: invert(37%) sepia(54%) saturate(3571%) hue-rotate(309deg) brightness(91%) contrast(86%);
+      width: 100px;
+      height: 100px;
+      margin-bottom: 30px;
+      margin-left: 20px;
+      position: absolute;
+    }
+    // Pieni
+    @media (max-width: $breakpoint-md) {
+      filter: invert(37%) sepia(54%) saturate(3571%) hue-rotate(309deg) brightness(91%) contrast(86%);
+      width: 32px;
+      height: 32px;
+      margin-bottom: 30px;
+      margin-left: 10px;
+      position: absolute;
+    }
   }
 
 
