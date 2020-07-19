@@ -122,13 +122,11 @@ export default class StartPage extends Vue {
   }
 
   .koti-teksti-body {
-    // Iso
-    @media (min-width: $breakpoint-md) {
+    @media (min-width: $breakpoint-md) { // Iso
       font-size: 20px;
       margin-left: 40px
     }
-    // Pieni
-    @media (max-width: $breakpoint-md) {
+    @media (max-width: $breakpoint-md) { // Pieni
       font-size: 14px
     }
   }

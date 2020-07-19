@@ -74,7 +74,14 @@
   font-family: acme
   src: url(../assets/fonts/acme.woff)
 
+// Kokoihin liittyvää
+.hide-for-phones
+  @media (max-width: $breakpoint-md)
+    display: none
 
+.show-only-phones
+  @media (min-width: $breakpoint-md)
+    display: none
 
 
 

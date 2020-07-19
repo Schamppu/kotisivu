@@ -7,9 +7,9 @@
     >
     </q-img>
 
-    <h3 class="q-ma-md t-tausta" style="z-index: 1000; position: absolute; font-family: 'acme';">
+    <div class="koti-separator-text">
       {{ this.title }}
-    </h3>
+    </div>
 
   </div>
 </template>
@@ -32,6 +32,21 @@ export default class TitleSeparator extends Vue {
     filter: invert(68%) sepia(96%) saturate(1664%) hue-rotate(324deg) brightness(87%) contrast(94%);
     height: 100%;
     width: 35em;
+  }
+
+  .koti-separator-text {
+    z-index: 1000;
+    position: absolute;
+    font-family: 'acme';
+    color: $tausta;
+    @media (min-width: $breakpoint-md) { // Iso
+      font-size: 40px;
+      padding-top: 12px;
+    }
+    @media (max-width: $breakpoint-md) { // Pieni
+      font-size: 24px;
+      padding-top: 6px;
+    }
   }
 
 </style>
